@@ -1,0 +1,155 @@
+$width:200px
+$widthIcons: 100%
+$padding:10px
+$bgcolor: rgb(52, 52, 52)
+$hovercolor: rgb(123 116 116 / 11%)
+$width-collapsed: 50px
+
+#main-container
+    color: white
+
+#sidemenu
+    background: linear-gradient(#181818, #36383b)
+    color: white
+    position: fixed
+    height: 100%
+    left: 0
+    top: 0
+
+#sidemenu a
+    color: white
+    text-decoration: none
+
+#sidemenu #header
+    box-sizing: border-box
+    border-bottom: solid 1px $hovercolor
+
+#sidemenu #header #title
+    box-sizing: border-box
+    overflow: hidden
+
+#sidemenu #header #title, #sidemenu #header #menu-btn
+    vertical-align: midle
+
+#sidemenu #header #menu-btn
+    display: inline-block
+
+#sidemenu #header #menu-btn
+    cursor: pointer
+    padding: 10px
+    width: $width-collapsed
+    box-sizing: border-box
+
+#sidemenu #header #menu-btn:hover
+    background-color: $hovercolor
+
+#sidemenu #header #menu-btn .btn-hamburger
+    background-color: #fff
+    width: $widthIcons
+    height: 2px
+    margin: 5px 0
+
+#sidemenu #profile
+    border-bottom: solid 1px $hovercolor
+    padding: $padding 0
+    text-align: center
+    margin-bottom: 6px
+
+#sidemenu #profile #photo
+    box-sizing: border-box
+    padding: $padding
+    margin: 0 auto
+
+#sidemenu #profile #photo img
+    border-radius: 50%
+    width: 75%
+    background-color: grey
+
+#sidemenu #profile #photo, #sidemenu #profile #name
+    font-size: 24px
+    padding: $padding 0
+    overflow: hidden
+
+#sidemenu #menu-items
+    overflow: hidden
+
+#sidemenu #menu-items .item
+    width: $width
+
+#sidemenu #menu-items .item .icon
+    display: inline-block
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .title
+    font-size: 14px
+    vertical-align: middle
+    overflow: hidden
+    display: inline-block
+
+#sidemenu #menu-items .item a
+    display: block 
+
+#sidemenu #menu-items .item a:hover 
+    background-color: $hovercolor
+
+#sidemenu #menu-items .item .icon
+    box-sizing: border-box
+    padding: $padding
+    width: $width-collapsed
+
+#sidemenu #menu-items .item .icon img
+    width: $widthIcons
+
+#sidemenu #menu-items .item .title
+    padding: $padding 0
+
+#sidemenu #menu-items .item.separator
+    height: 1px
+    border-bottom: solid 1px $hovercolor
+    margin: 6px 0
+
+.menu-expanded
+    width: $width
+    box-shadow: 0 0 12px rgba(0,0,0,0.6)
+
+.menu-expanded #header #title
+    display: inline-block
+    width: calc(100% - 50px)
+    margin-right: -5px
+    padding: $padding
+
+.menu-expanded #header #title span
+    width: calc($width - $width-collapsed - 5px)
+    overflow: hidden
+    font-size: 15px
+
+.menu-expanded #profile #photo #name
+    width: 200px
+
+.menu-collapsed
+    width: $width-collapsed
+    box-shadow: 0 0 12px rgba(0,0,0,0.6)
+
+.menu-collapsed #header #title
+    margin: 0
+    height: 0
+    padding: 0
+    width: 0
+
+.menu-collapsed #profile #name
+    display: none
+
+.menu-collapsed .item
+    width: 100px
+
+.form-switch
+    padding-left: 2.5rem
+
+.form-switch .form-check-input
+    width: 24px !important
+
+.form-switch label
+    margin-left: 10px
+
+.menu-collapsed .form-switch label
+    display: none

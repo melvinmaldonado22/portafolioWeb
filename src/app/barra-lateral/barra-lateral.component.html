@@ -1,0 +1,75 @@
+<div id="sidemenu" [class.menu-expanded]="!isMenuExpanded" [class.menu-collapsed]="isMenuExpanded">
+    <div id="header">
+        <div id="title"><span class="titulo">Melvin Maldonado</span></div>
+        <div id="menu-btn" (click)="toggleMenu()">
+            <div class="btn-hamburger"></div>
+            <div class="btn-hamburger"></div>
+            <div class="btn-hamburger"></div>
+        </div>
+    </div>
+
+    <div id="profile">
+        <div id="photo"><img src="../../assets/Melvin.png" alt="perfil"></div>
+        <div id="name"><span>Ing. en Sistemas</span></div>
+    </div>
+
+    <div id="menu-items">
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../../assets/home.png" alt="Página principal" title="Página principal"></div>
+                <div class="title"><span>General</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../../assets/profile.png" alt="Sobre mí" title="Sobre mí.."></div>
+                <div class="title"><span>Sobre mí..</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../../assets/potential.png" alt="Habilidades" title="Habilidades"></div>
+                <div class="title"><span>Habilidades</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../../assets/suitcase.png" alt="Proyectos terminados" title="Proyectos terminados"></div>
+                <div class="title"><span>Proyectos</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../../assets/work-in-progress.png" alt="proyectos en proceso" title="proyectos en proceso"></div>
+                <div class="title"><span>En proceso..</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="form-check form-switch">
+            <input 
+                class="form-check-input" 
+                (click)="modoOscuro()"
+                [checked]="switchState"
+                (change)="toggleSwitch()"
+                type="checkbox" 
+                role="switch" 
+                id="flexSwitchCheckDefault" 
+                title="Modo oscuro">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Modo oscuro</label>
+        </div>
+    </div>
+</div>
