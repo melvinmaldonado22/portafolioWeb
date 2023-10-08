@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 
 export class BarraLateralComponent {
   
-  switchState: boolean = false;
+  switchState: boolean = true;
   isMenuExpanded = false;
   body = document.querySelector('body')
 
   ngOnInit(): void { 
     const savedSwitchState = localStorage.getItem('switchState');
-    this.switchState = savedSwitchState ? JSON.parse(savedSwitchState) : false;
+    this.switchState = savedSwitchState ? JSON.parse(savedSwitchState) : true;
     this.cargarEstilo()
   }
   
@@ -24,18 +24,22 @@ export class BarraLateralComponent {
   }
 
   modoOscuro(){
-    this.body?.classList.toggle('modo-oscuro')
-    this.guardarEstilo(!this.body?.classList.contains('modo-oscuro'))
+    if(!this.body?.classList.contains('modo-claro')){
+      this.body?.classList.add('modo-claro')
+    }else{
+      this.body?.classList.toggle('modo-claro')
+    }
+    this.guardarEstilo(this.body?.classList.contains('modo-claro'))
   }
 
   guardarEstilo(value:any){
-    localStorage.setItem('Modo-oscuro', value)
+    localStorage.setItem('Modo-claro', value)
   }
 
   cargarEstilo(){
-    const estilo = localStorage.getItem('Modo-oscuro')
+    const estilo = localStorage.getItem('Modo-claro')
     if(estilo === 'true'){
-      this.body?.classList.toggle('modo-oscuro')
+      this.body?.classList.toggle('modo-claro')
     }
   }
   
