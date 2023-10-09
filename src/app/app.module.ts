@@ -6,17 +6,35 @@ import { AppComponent } from './app.component';
 import { BarraLateralComponent } from './barra-lateral/barra-lateral.component';
 import { InformacionGeneralComponent } from './informacion-general/informacion-general.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { ProyectosTerminadosComponent } from './proyectos-terminados/proyectos-terminados.component';
+import { ProyectosProcesoComponent } from './proyectos-proceso/proyectos-proceso.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarraLateralComponent,
     InformacionGeneralComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    HabilidadesComponent,
+    ProyectosTerminadosComponent,
+    ProyectosProcesoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -33,7 +33,7 @@
         <div class="item separator"></div>
 
         <div class="item">
-            <a routerLink="/#">
+            <a routerLink="/habilidades">
                 <div class="icon"><img src="../../assets/potential.png" alt="Habilidades" title="Habilidades"></div>
                 <div class="title"><span>Habilidades</span></div>
             </a>
@@ -42,7 +42,7 @@
         <div class="item separator"></div>
 
         <div class="item">
-            <a routerLink="/#">
+            <a routerLink="/proyectos-terminados">
                 <div class="icon"><img src="../../assets/suitcase.png" alt="Proyectos terminados" title="Proyectos terminados"></div>
                 <div class="title"><span>Proyectos</span></div>
             </a>
@@ -51,26 +51,23 @@
         <div class="item separator"></div>
 
         <div class="item">
-            <a routerLink="/#">
+            <a routerLink="/proyectos-en-proceso">
                 <div class="icon"><img src="../../assets/work-in-progress.png" alt="proyectos en proceso" title="proyectos en proceso"></div>
                 <div class="title"><span>En proceso..</span></div>
             </a>
         </div>
 
         <div class="item separator"></div>
-
-        <div class="form-check form-switch">
-            <input 
-                class="form-check-input" 
-                (click)="modoOscuro()"
-                [checked]="switchState"
-                (change)="toggleSwitch()"
-                type="checkbox" 
-                role="switch" 
-                id="flexSwitchCheckDefault" 
-                title="Modo oscuro"
-                >
-            <label class="form-check-label" for="flexSwitchCheckDefault">Modo oscuro</label>
-        </div>
+        <mat-slide-toggle
+            class="btn-switch"
+            (click)="modoOscuro()"
+            [checked]="switchState"
+            (change)="toggleSwitch()"
+            type="checkbox" 
+            role="switch" 
+            id="flexSwitchCheckDefault" 
+            title="Modo oscuro"
+        ></mat-slide-toggle>
+        <label class="form-check-label" for="flexSwitchCheckDefault">Modo oscuro</label>
     </div>
 </div>
