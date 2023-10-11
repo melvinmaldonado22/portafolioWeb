@@ -1,8 +1,40 @@
-.mat-mdc-button .mdc-button__label, .mat-mdc-unelevated-button 
-.mdc-button__label, .mat-mdc-raised-button .mdc-button__label, 
-.mat-mdc-outlined-button .mdc-button__label 
-    z-index: 1
-
-
-.mdc-button
+.mat-mdc-card 
     position: relative
+    margin: 15px
+    width: 220px
+
+.mdc-card__media
+    width: 100%
+    transition: 0.5s
+
+.mdc-card__media:hover 
+    width: 110%
+    transition: 0.5s
+
+.mdc-card 
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-sizing: border-box
+
+.card-container
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+.mat-mdc-card
+    --mdc-elevated-card-container-color: #414142 !important
+
+.mat-mdc-card-subtitle
+    color: #ccc6c6 !important
+
+.mat-mdc-button:not(:disabled) 
+    color: #ccc6c6 !important
+
+.experiencia-laboral
+    background-color: #414142
+    padding: 10px
+    margin: 10px
+    border-radius: 10px
