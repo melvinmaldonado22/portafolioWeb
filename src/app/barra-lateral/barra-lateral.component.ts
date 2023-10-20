@@ -9,8 +9,9 @@ import { Component } from '@angular/core';
 export class BarraLateralComponent {
   
   switchState: boolean = true;
-  isMenuExpanded = false;
+  isMenuExpanded: boolean = false;
   body = document.querySelector('body')
+  itemActivo:string = 'elemento1';
 
   ngOnInit(): void { 
     const savedSwitchState = localStorage.getItem('switchState');
@@ -47,6 +48,10 @@ export class BarraLateralComponent {
   toggleSwitch() {
     this.switchState = !this.switchState;
     localStorage.setItem('switchState', JSON.stringify(this.switchState));
+  }
+
+  cambiarElementoActivo(elemento: string) {
+    this.itemActivo = elemento;
   }
 }
 

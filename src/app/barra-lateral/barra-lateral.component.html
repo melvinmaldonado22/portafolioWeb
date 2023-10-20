@@ -9,50 +9,50 @@
     </div>
 
     <div id="profile">
-        <div id="photo"><img src="../../assets/Melvin.png" alt="perfil"></div>
+        <div id="photo"><img src="/assets/Melvin.png" alt="perfil"></div>
         <div id="name"><span>Ing. en Sistemas</span></div>
     </div>
 
     <div id="menu-items">
-        <div class="item">
+        <div class="item" (click)="cambiarElementoActivo('elemento1')" [ngClass]="{'active': itemActivo === 'elemento1'}">
             <a routerLink="/portafolio">
-                <div class="icon"><img src="../../assets/home.png" alt="Página principal" title="Página principal"></div>
+                <div class="icon"><img src="/assets/home.png" alt="Página principal" title="Página principal"></div>
                 <div class="title"><span>General</span></div>
             </a>
         </div>
 
         <div class="item separator"></div>
 
-        <div class="item">
+        <div class="item" (click)="cambiarElementoActivo('elemento2')" [ngClass]="{'active': itemActivo === 'elemento2'}">
             <a routerLink="/sobre-mi">
-                <div class="icon"><img src="../../assets/profile.png" alt="Sobre mí" title="Sobre mí.."></div>
+                <div class="icon"><img src="/assets/profile.png" alt="Sobre mí" title="Sobre mí.."></div>
                 <div class="title"><span>Sobre mí..</span></div>
             </a>
         </div>
 
         <div class="item separator"></div>
 
-        <div class="item">
+        <div class="item" (click)="cambiarElementoActivo('elemento3')" [ngClass]="{'active': itemActivo === 'elemento3'}">
             <a routerLink="/habilidades">
-                <div class="icon"><img src="../../assets/potential.png" alt="Habilidades" title="Habilidades"></div>
+                <div class="icon"><img src="/assets/potential.png" alt="Habilidades" title="Habilidades"></div>
                 <div class="title"><span>Habilidades</span></div>
             </a>
         </div>
 
         <div class="item separator"></div>
 
-        <div class="item">
+        <div class="item" (click)="cambiarElementoActivo('elemento4')" [ngClass]="{'active': itemActivo === 'elemento4'}">
             <a routerLink="/proyectos-terminados">
-                <div class="icon"><img src="../../assets/suitcase.png" alt="Proyectos terminados" title="Proyectos terminados"></div>
+                <div class="icon"><img src="/assets/suitcase.png" alt="Proyectos terminados" title="Proyectos terminados"></div>
                 <div class="title"><span>Proyectos</span></div>
             </a>
         </div>
 
         <div class="item separator"></div>
 
-        <div class="item">
+        <div class="item" (click)="cambiarElementoActivo('elemento5')" [ngClass]="{'active': itemActivo === 'elemento5'}">
             <a routerLink="/proyectos-en-proceso">
-                <div class="icon"><img src="../../assets/work-in-progress.png" alt="proyectos en proceso" title="proyectos en proceso"></div>
+                <div class="icon"><img src="/assets/work-in-progress.png" alt="proyectos en proceso" title="proyectos en proceso"></div>
                 <div class="title"><span>En proceso..</span></div>
             </a>
         </div>
