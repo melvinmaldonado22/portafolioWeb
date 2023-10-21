@@ -1,19 +1,19 @@
-<div id="sidemenu" [class.menu-expanded]="isMenuExpanded" [class.menu-collapsed]="!isMenuExpanded">
-    <div id="header">
-        <div id="title"><span class="titulo">Melvin Maldonado</span></div>
-        <div id="menu-btn" (click)="toggleMenu()">
+<div class="sidemenu" [class.menu-expanded]="isMenuExpanded" [class.menu-collapsed]="!isMenuExpanded">
+    <div class="header">
+        <div class="title"><span class="titulo">Melvin Maldonado</span></div>
+        <div class="menu-btn" (click)="toggleMenu()">
             <div class="btn-hamburger"></div>
             <div class="btn-hamburger"></div>
             <div class="btn-hamburger"></div>
         </div>
     </div>
 
-    <div id="profile">
-        <div id="photo"><img src="/assets/Melvin.png" alt="perfil"></div>
-        <div id="name"><span>Ing. en Sistemas</span></div>
+    <div class="profile">
+        <div class="photo"><img src="/assets/Melvin.png" alt="perfil"></div>
+        <div class="name"><span>Ing. en Sistemas</span></div>
     </div>
 
-    <div id="menu-items">
+    <div class="menu-items">
         <div class="item" (click)="cambiarElementoActivo('elemento1')" [ngClass]="{'active': itemActivo === 'elemento1'}">
             <a routerLink="/portafolio">
                 <div class="icon"><img src="/assets/home.png" alt="Página principal" title="Página principal"></div>
@@ -65,7 +65,7 @@
             (change)="toggleSwitch()"
             type="checkbox" 
             role="switch" 
-            id="flexSwitchCheckDefault" 
+            class="flexSwitchCheckDefault" 
             title="Modo oscuro"
         ></mat-slide-toggle>
         <label class="form-check-label" for="flexSwitchCheckDefault">Modo oscuro</label>
