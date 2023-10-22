@@ -1,19 +1,30 @@
 body
     background: linear-gradient(100deg,#3a3c40, #121214)
-    font-family: "Gill Sans", sans-serif
+    font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif !important
     font-size: 12px
     padding:0
     margin:0
     margin-left: 60px
     color: white
     min-height: 100vh
-    transition: all .2s
+    transition: all .4s
+
+.mat-h4, .mat-body-1, .mat-typography .mat-h4, .mat-typography .mat-body-1, .mat-typography h4
+    font-size: 20px !important
+    font-weight: 300 !important
+
+.mat-body, .mat-body-2, .mat-typography .mat-body, .mat-typography .mat-body-2, .mat-typography
+    font-size: 17px !important
+    font-weight: 300 !important
+
+.mat-h6, .mat-typography .mat-h6, .mat-typography h6
+    color: #68a7e9
 
 .body-expanded
     margin-left: 210px !important
 
 body.modo-claro
-    background: linear-gradient(#fffbfb, #8b8b8b)
+    background: linear-gradient(344deg, #ffffff, #cfcfcf)
     color: black
     
 
@@ -64,6 +75,17 @@ body.modo-claro h5
 body.modo-claro .active 
     background-color: rgba(242 242 242 / 99%) !important
 
+body.modo-claro .contenedor-habilidades-frontend
+    background: linear-gradient(91deg, rgb(149 149 214 / 55%), transparent)
+
+body.modo-claro .contenedor-habilidades-backend
+    background: linear-gradient(91deg, rgb(149 149 214 / 55%), transparent)
+
+body.modo-claro .experiencia-laboral h4
+    color: #fb5768 !important
+
+body.modo-claro .experiencia-laboral h6
+    color: #009688 !important
 
 @media (max-width:650px) 
     body
