@@ -8,10 +8,11 @@ import { InformacionGeneralComponent } from './informacion-general/informacion-g
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import {MatIconModule} from '@angular/material/icon';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatIconModule} from '@angular/material/icon';
+import { MatDividerModule} from '@angular/material/divider';
+import { MatButtonModule} from '@angular/material/button';
+import { MatCardModule} from '@angular/material/card';
+import { MatDialogModule} from '@angular/material/dialog';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosTerminadosComponent } from './proyectos-terminados/proyectos-terminados.component';
 import { ProyectosProcesoComponent } from './proyectos-proceso/proyectos-proceso.component';
@@ -34,7 +35,8 @@ import { ProyectosProcesoComponent } from './proyectos-proceso/proyectos-proceso
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

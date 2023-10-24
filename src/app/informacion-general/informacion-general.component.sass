@@ -8,17 +8,17 @@
 .mdc-card__media
     width: 100%
     height: 100%
-    transition: 0.5s
-    object-fit: cover
-
-.mdc-card__media:hover
-    transform: scale(1.2)
 
 .mdc-card 
     display: flex
     flex-direction: column
     align-items: center
     box-sizing: border-box
+    transition: 0.5s
+
+.mdc-card:hover 
+    transform: scale(1.07)
+    cursor: pointer
 
 .card-container
     display: flex
@@ -52,6 +52,25 @@
 
 .experiencia-laboral h4
     color: #ecee61
+
+strong
+    font-weight: 450 !important
+
+.contacto 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 1rem
+    justify-content: center
+    align-items: center
+    padding-top: 20px
+
+.contacto img
+    width: 30px
+    transition: .3s
+
+.contacto img:hover
+    transform: scale(1.05)
 
 @media (max-width:950px)
     .experiencia-laboral
