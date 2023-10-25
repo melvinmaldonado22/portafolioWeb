@@ -13,6 +13,7 @@ import { MatDividerModule} from '@angular/material/divider';
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
 import { MatDialogModule} from '@angular/material/dialog';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosTerminadosComponent } from './proyectos-terminados/proyectos-terminados.component';
 import { ProyectosProcesoComponent } from './proyectos-proceso/proyectos-proceso.component';
@@ -36,7 +37,8 @@ import { ProyectosProcesoComponent } from './proyectos-proceso/proyectos-proceso
     MatDividerModule,
     MatButtonModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

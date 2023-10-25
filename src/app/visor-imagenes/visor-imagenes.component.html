@@ -1,4 +1,14 @@
-<h2 mat-dialog-title>Títulos</h2>
-<div mat-dialog-content>
-    <img src="/assets/titulo.jpeg">
-</div>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <img (click)="ver_imagen(0)" class="ver-img" src="/assets/titulo-mini.jpg">
+        <img (click)="ver_imagen(1)" class="ver-img" src="/assets/titulo-atras-mini.jpg">
+    </mat-drawer>
+    <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+        <img src="/assets/next.png">
+    </button>
+    <div mat-dialog-content class="contenedor-ver-img">
+        <img class="ver-img" src={{titulos[index]}}>
+    </div>
+    </div>
+</mat-drawer-container>

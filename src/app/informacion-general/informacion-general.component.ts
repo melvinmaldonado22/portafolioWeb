@@ -8,8 +8,9 @@ import { VisorImagenesComponent } from '../visor-imagenes/visor-imagenes.compone
 })
 export class InformacionGeneralComponent {
   constructor(public dialog: MatDialog) {}
-
-  abrirVisor(){
+  opcion : string[] = ['titulo','certificado','otro'] 
+  abrirVisor(indice:number){
+    console.log(this.opcion[indice]);
     this.dialog.open(VisorImagenesComponent)
   }
 }
