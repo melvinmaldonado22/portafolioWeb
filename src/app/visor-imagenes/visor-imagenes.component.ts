@@ -27,22 +27,22 @@ export class VisorImagenesComponent {
   }
 
   titulos: { [key: string]: string } = {
-    titulo1: '/assets/titulos/titulo.jpeg',
-    titulo2: '/assets/titulos/tituloAtras.jpeg'
+    titulo1: '/assets/titulos/titulo.webp',
+    titulo2: '/assets/titulos/tituloAtras.webp'
   };
   certificados: { [key: string]: string } = {
-    titulo1: '/assets/titulos/Certificado_JavaScript.jpg',
+    titulo1: '/assets/titulos/Certificado_JavaScript.webp',
     titulo2: '/assets/titulos/Certificado_INFOP_Python.jpg',
-    titulo3: '/assets/titulos/CertificadoOracle.jpg',
+    titulo3: '/assets/titulos/CertificadoOracle.webp',
     titulo4: '/assets/titulos/Certificado_INFOP_MySQL.jpg',
     titulo5: '/assets/titulos/Certificado_intro_ciberseguridad.jpg',
-    titulo6: '/assets/titulos/Certificado_Seguridad_Essentials.jpg'
+    titulo6: '/assets/titulos/Certificado_Seguridad_Essentials.webp'
   };
   complementos: { [key: string]: string } = {
     titulo1: '/assets/titulos/Certificado_Get_Connect.jpg',
-    titulo2: '/assets/titulos/Certificado_Mant1.jpg',
-    titulo3: '/assets/titulos/Certificado_Mant2.jpg',
-    titulo4: '/assets/titulos/Certificado_Mant3.jpg',
+    titulo2: '/assets/titulos/Certificado_Mant1.webp',
+    titulo3: '/assets/titulos/Certificado_Mant2.webp',
+    titulo4: '/assets/titulos/Certificado_Mant3.webp',
     titulo5: '/assets/titulos/Certificado_IE1.jpg',
   };
 
