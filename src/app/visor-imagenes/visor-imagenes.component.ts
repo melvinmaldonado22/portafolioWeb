@@ -32,18 +32,18 @@ export class VisorImagenesComponent {
   };
   certificados: { [key: string]: string } = {
     titulo1: '/assets/titulos/Certificado_JavaScript.webp',
-    titulo2: '/assets/titulos/Certificado_INFOP_Python.jpg',
+    titulo2: '/assets/titulos/Certificado_INFOP_Python.webp',
     titulo3: '/assets/titulos/CertificadoOracle.webp',
-    titulo4: '/assets/titulos/Certificado_INFOP_MySQL.jpg',
-    titulo5: '/assets/titulos/Certificado_intro_ciberseguridad.jpg',
+    titulo4: '/assets/titulos/Certificado_INFOP_MySQL.webp',
+    titulo5: '/assets/titulos/Certificado_intro_ciberseguridad.webp',
     titulo6: '/assets/titulos/Certificado_Seguridad_Essentials.webp'
   };
   complementos: { [key: string]: string } = {
-    titulo1: '/assets/titulos/Certificado_Get_Connect.jpg',
+    titulo1: '/assets/titulos/Certificado_Get_Connect.webp',
     titulo2: '/assets/titulos/Certificado_Mant1.webp',
     titulo3: '/assets/titulos/Certificado_Mant2.webp',
     titulo4: '/assets/titulos/Certificado_Mant3.webp',
-    titulo5: '/assets/titulos/Certificado_IE1.jpg',
+    titulo5: '/assets/titulos/Certificado_IE1.webp',
   };
 
 mostrarTitulos(opcion:string){
