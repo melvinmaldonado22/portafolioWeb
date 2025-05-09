@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-barra-lateral',
-  templateUrl: './barra-lateral.component.html',
-  styleUrls: ['./barra-lateral.component.sass']
+    selector: 'app-barra-lateral',
+    templateUrl: './barra-lateral.component.html',
+    styleUrls: ['./barra-lateral.component.sass'],
+    standalone: false
 })
 
 export class BarraLateralComponent {

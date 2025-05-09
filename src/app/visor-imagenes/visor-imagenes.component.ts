@@ -10,11 +10,10 @@ type OpcionesImagenes = {
 };
 
 @Component({
-  selector: 'app-visor-imagenes',
-  templateUrl: './visor-imagenes.component.html',
-  styleUrls: ['./visor-imagenes.component.sass'],
-  standalone: true,
-  imports: [MatSidenavModule, NgIf, NgFor, MatButtonModule, CommonModule],
+    selector: 'app-visor-imagenes',
+    templateUrl: './visor-imagenes.component.html',
+    styleUrls: ['./visor-imagenes.component.sass'],
+    imports: [MatSidenavModule, NgIf, NgFor, MatButtonModule, CommonModule]
 })
 
 export class VisorImagenesComponent {
